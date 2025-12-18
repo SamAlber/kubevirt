@@ -244,3 +244,7 @@ func (config *ClusterConfig) MigrationDowntimeTuningEnabled() bool {
 func (config *ClusterConfig) LiveUpdateNADRefEnabled() bool {
 	return config.isFeatureGateEnabled(featuregate.LiveUpdateNADRef)
 }
+
+func (config *ClusterConfig) ReservedOverheadMemlockEnabled() bool {
+	return config.isFeatureGateEnabled(featuregate.ReservedOverheadMemlock)
+}
