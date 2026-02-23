@@ -11,6 +11,7 @@ go_library(
     importpath = "kubevirt.io/kubevirt/pkg/virt-handler/isolation",
     visibility = ["//visibility:public"],
     deps = [
+        "//pkg/hypervisor/common:go_default_library",
         "//pkg/safepath:go_default_library",
         "//pkg/unsafepath:go_default_library",
         "//pkg/util:go_default_library",
